@@ -25,7 +25,7 @@ It will read your `orders` file and track the orders one by one.
 
 At the very first time you track an order, it will keep a backup file to be using to compare to any new changes.
 
-In case of a change is deteced, it will try to send an email to the referred email in `mailto`. This is totally optional once you can just change the script to be notified the way you prefer. For instance, get notified by `notify-send` command.
+In case of a change is detected, it will try to send an email to the referred email in `mailto` file. This is totally optional once you can just change the script to be notified the way you prefer. For instance, get notified by `notify-send` command.
 
 # Tips
 You might want to keep it running in the background without explicitly run it. In this case, you just need to create some script like:
@@ -39,7 +39,7 @@ done;
 # trackd.sh
 ```
 
-and then put it in your `.profile` or just execute it in the background with:
+and then execute it in the background:
 ```sh
 sh ./trackd.sh >> /dev/null &
 ```
